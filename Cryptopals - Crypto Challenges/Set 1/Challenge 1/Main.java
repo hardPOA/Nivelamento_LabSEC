@@ -13,8 +13,6 @@ class Main {
       bytes[i/2] = b;
     }
 
-    System.out.println(Arrays.toString(bytes));
-    System.out.println();
     String convertido = Base64.conversorBase64(bytes);
     System.out.println(convertido);
     
