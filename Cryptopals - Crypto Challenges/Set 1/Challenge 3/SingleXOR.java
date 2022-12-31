@@ -9,6 +9,7 @@ public class SingleXOR {
         byte cipher2Hex[] = new byte[cipher.length()/2];
         String highestValueString = "";
         int highestValue = 0;
+        char key = 'a';
     
         for (int i = 0; i < cipher.length(); i += 2) {
     
@@ -41,10 +42,12 @@ public class SingleXOR {
                 if (stringValue > highestValue) {
                     highestValue = stringValue;
                     highestValueString = decoded;
+                    key = c;
                 }
             }
         }
-        System.out.println(highestValueString);
+        System.out.println(String.format("Mensagem encriptada com a chave '%c': %s", key, highestValueString));
+
     }
 }
 
