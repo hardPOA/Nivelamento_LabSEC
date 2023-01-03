@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Challenge5 {
+public class RepeatingkeyXOR {
 
     public static void main(String[] args) throws Exception {
 
